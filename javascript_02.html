@@ -26,5 +26,35 @@
 		</script>						
 	</head>
 	<body>
+    <div>
+        <textarea cols = "100" rows="40">
+ 			var text1 = "안녕하세요.";
+			var text2 = '안녕하세요.';
+			
+			// 큰 따옴표(") 인용문장 출력
+   			// 친구가 말했다 "수업 땡땡이 치자. F는 우리의 몫."
+
+			var text3 = "친구가 말했다 \"수업 땡땡이 치자. F는 우리의 몫.\"";
+			var text4 = '친구가 말했다 "수업 땡땡이 치자. F는 우리의 몫."';
+
+			// 작은 따옴표(') 인용문장 출력
+			// 친구가 말했다 '수업 땡땡이 치자. F는 우리의 몫.'
+			var text5 = "친구가 말했다 '수업 땡땡이 치자. F는 우리의 몫.'";
+			var text6 = '친구가 말했다 \'수업 땡땡이 치자. F는 우리의 몫.\'';
+
+			console.log(text1);
+			console.log(text2);
+			console.log(text3);
+			console.log(text4);
+			console.log(text5);
+			console.log(text6);    
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>  
 	</body>
 </html>

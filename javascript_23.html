@@ -14,5 +14,24 @@
     </script>
 </head>
 <body>
+    <div>
+        <textarea cols = "100" rows="40">
+           var x = 9.656;
+      var a = x.toPrecision();
+      var b = x.toPrecision(2);
+      var c = x.toPrecision(4);
+      var d = x.toPrecision(6);
+      console.log(typeof(a) + " : " + a); // string : 9.656
+      console.log(typeof(b) + " : " + b); // string : 9.7
+      console.log(typeof(c) + " : " + c); // string : 9.656
+      console.log(typeof(d) + " : " + d); // string : 9.65600
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>  
 </body>
 </html>

@@ -12,5 +12,22 @@
     </script>
 </head>
 <body>
+    <div>
+        <textarea cols = "100" rows="40">
+           var x = 10;
+      var a = x.toString();
+      var b = (123).toString();
+      var c = (100 + 23).toString();
+      console.log(typeof(a) + " : " + a); // string : 10
+      console.log(typeof(b) + " : " + b); // string : 123
+      console.log(typeof(c) + " : " + c); // string : 123
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>  
 </body>
 </html>
