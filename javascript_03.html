@@ -1,7 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-    	    <script type="text/javascript">
+<head>
+    <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+            //
+            // 자바스크립트 코드를 이쪽으로 옮김.
+            //
     		var language = "javascript";
     		console.log(language[0]);
     		console.log(language[1]);

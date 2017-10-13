@@ -2,9 +2,24 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+            //
+            // 자바스크립트 코드를 이쪽으로 옮김.
+            //
       for (var i = 0; i < 5; i++) {
           console.log("The number is " + i);
       }
+        }
+    }
     </script>
 </head>
 <body>
@@ -22,4 +37,5 @@
         <ul id="log" style="list-style-type:circle"></ul>
     </div>  
 </body>
-</html>     
+</html>
+ 
