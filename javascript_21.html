@@ -2,6 +2,19 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+            //
+            // 자바스크립트 코드를 이쪽으로 옮김.
+            //
       var x = 9.656;
       var a = x.toExponential(2);
       var b = x.toExponential(4);
@@ -9,8 +22,27 @@
       console.log(typeof(a) + " : " + a); // string : 9.66e+0
       console.log(typeof(b) + " : " + b); // string : 9.6560e+0
       console.log(typeof(c) + " : " + c); // string : 9.656000e+0
+        }
+    }
     </script>
 </head>
 <body>
+    <div>
+        <textarea cols = "100" rows="40">
+           var x = 9.656;
+      var a = x.toExponential(2);
+      var b = x.toExponential(4);
+      var c = x.toExponential(6);
+      console.log(typeof(a) + " : " + a); // string : 9.66e+0
+      console.log(typeof(b) + " : " + b); // string : 9.6560e+0
+      console.log(typeof(c) + " : " + c); // string : 9.656000e+0
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>  
 </body>
 </html>

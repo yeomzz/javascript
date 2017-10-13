@@ -2,14 +2,45 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+            //
+            // 자바스크립트 코드를 이쪽으로 옮김.
+            //
     var a = "현재 시간은 ";
     var b = 1;
     var c = 2;
     var d = "시입니다.";
     var sum = a + b + c + d;
     console.log(sum);
+        }
+    }
     </script>
 </head>
 <body>
+    <div>
+        <textarea cols = "100" rows="40">
+         var a = "현재 시간은 ";
+    var b = 1;
+    var c = 2;
+    var d = "시입니다.";
+    var sum = a + b + c + d;
+    console.log(sum);
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>  
 </body>
 </html>

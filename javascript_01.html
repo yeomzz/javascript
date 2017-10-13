@@ -1,41 +1,83 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<script type="text/javascript">
-			var byteValue = 100;
-			var shortValue = 30000;
-			var intValue = 1000000000;
-			var longValue = 9000000000000000000;
-			var floatValue = 44.77;
-			var doubleValue = 64.7735;
-			var boolValue = true;
-			var stringValue = 'javascript';
-			var nullValue = null;
-			var undefinedValue;
+<head>
+    <script type="text/javascript">
+    var byteValue = 100;
+    var shortValue = 30000;
+    var intValue = 1000000000;
+    var longValue = 9000000000000000000;
+    var floatValue = 44.77;
+    var doubleValue = 64.7735;
+    var boolValue = true;
+    var stringValue = 'javascript';
+    var nullValue = null;
+    var undefinedValue;
 
-			console.log(byteValue);
-			console.log(shortValue);
-			console.log(intValue);
-			console.log(longValue);
-			console.log(floatValue);
-			console.log(doubleValue);
-			console.log(boolValue);
-			console.log(stringValue);
-			console.log(nullValue);
-			console.log(undefinedValue);
+    console.log(byteValue);
+    console.log(shortValue);
+    console.log(intValue);
+    console.log(longValue);
+    console.log(floatValue);
+    console.log(doubleValue);
+    console.log(boolValue);
+    console.log(stringValue);
+    console.log(nullValue);
+    console.log(undefinedValue);    
 
-			console.log(typeof byteValue);
-			console.log(typeof shortValue);
-			console.log(typeof intValue);
-			console.log(typeof longValue);
-			console.log(typeof floatValue);
-			console.log(typeof doubleValue);
-			console.log(typeof boolValue);
-			console.log(typeof stringValue);
-			console.log(typeof nullValue);
-			console.log(typeof undefinedValue);
-		</script>
-	</head>
-	<body>
-	</body>
-	</html>
+    console.log(typeof byteValue);
+    console.log(typeof shortValue);
+    console.log(typeof intValue);
+    console.log(typeof longValue);
+    console.log(typeof floatValue);
+    console.log(typeof doubleValue);
+    console.log(typeof boolValue);
+    console.log(typeof stringValue);
+    console.log(typeof nullValue);
+    console.log(typeof undefinedValue);
+    </script>
+</head>
+<body>
+    <div>
+        <textarea cols = "100" rows="40">
+            var byteValue = 100;
+            var shortValue = 30000;
+            var intValue = 1000000000;
+            var longValue = 9000000000000000000;
+            var floatValue = 44.77;
+            var doubleValue = 64.7735;
+            var boolValue = true;
+            var stringValue = 'javascript';
+            var nullValue = null;
+            var undefinedValue;
+
+            document.write(byteValue);
+            document.write(shortValue);
+            document.write(intValue);
+            document.write(longValue);
+            document.write(floatValue);
+            document.write(doubleValue);
+            document.write(boolValue);
+            document.write(stringValue);
+            document.write(nullValue);
+            document.write(undefinedValue);    
+
+            document.write(typeof byteValue);
+            document.write(typeof shortValue);
+            document.write(typeof intValue);
+            document.write(typeof longValue);
+            document.write(typeof floatValue);
+            document.write(typeof doubleValue);
+            document.write(typeof boolValue);
+            document.write(typeof stringValue);
+            document.write(typeof nullValue);
+            document.write(typeof undefinedValue);       
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>    
+</body>
+</html>

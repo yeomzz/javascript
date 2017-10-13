@@ -2,6 +2,19 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+
+            //
+            // 자바스크립트 코드를 이쪽으로 옮김.
+            //
       var day;
       switch (new Date().getDay()) {
           case 0:
@@ -26,8 +39,44 @@
               day = "Saturday";
       }
       console.log(day);
+        }
+    }
     </script>
 </head>
 <body>
+    <div>
+        <textarea cols = "100" rows="40">
+           var day;
+      switch (new Date().getDay()) {
+          case 0:
+              day = "Sunday";
+              break;
+          case 1:
+              day = "Monday";
+              break;
+          case 2:
+              day = "Tuesday";
+              break;
+          case 3:
+              day = "Wednesday";
+              break;
+          case 4:
+              day = "Thursday";
+              break;
+          case 5:
+              day = "Friday";
+              break;
+          case 6:
+              day = "Saturday";
+      }
+      console.log(day);
+        </textarea>
+    </div>
+    <div>
+        <input type="button" id="run" value="실행"/>
+    </div>
+    <div>
+        <ul id="log" style="list-style-type:circle"></ul>
+    </div>  
 </body>
 </html>
